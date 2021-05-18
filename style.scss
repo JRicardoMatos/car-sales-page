@@ -1,0 +1,204 @@
+*, *::after, *::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+$color-primary-400:#008AD8;
+
+
+body{
+    font-family:"Lexend Deca", sans-serif;
+    background: #E5E5E5;
+    padding:2.56rem 3.28rem;
+}
+
+.title{
+    font-size:2rem;
+    margin-bottom:0.5em;
+}
+
+.count{
+    font-size:1.125rem;
+    color:#565656;
+    margin-bottom:0.975em;
+}
+
+.cars-nav{
+    display:none;
+}
+
+.intro{
+    padding:1.125em 0.975em;
+}
+
+.search{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.75rem;
+
+    input{
+        height: 2.4375em;
+        width:85%;
+        border:none;
+        border-radius: 900px;
+        position:relative;
+        padding:0 1.15em;
+        background-image: url('../svgs/search.svg');
+        background-repeat: no-repeat;
+        background-position:95%;
+
+        &:focus{
+            outline:none;
+        }
+
+    }
+
+    .lupa{
+        background:white;
+    }
+}
+
+.car-container{
+    height:180px;
+    border-radius:10px;
+    padding:1.125em 0.975em;
+
+    &.filter{
+        display:none;
+    }
+
+    &:hover{
+        cursor:pointer;
+        background:white;
+    }
+    
+    h3{
+        font-size:1.375rem;
+        color:$color-primary-400;
+        margin-bottom:0.97em;
+    }
+
+    h5{
+        font-size:1.125rem;
+        color:#686868;
+        font-weight:400;
+
+    }
+
+    .prices{
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        margin-top:1.5625em;
+
+        h4{
+            font-size:1.5rem;
+        }
+    }
+
+    .hearts{
+        fill:black;
+    }
+}
+
+.dots:hover{
+    cursor:pointer;
+}
+
+.filters{
+    position:relative;
+
+    .filtersOptions{
+        position:absolute;
+        font-size:1.125rem;
+        background:white;
+        list-style:none;
+        top:100%;
+        right:100%;
+        box-shadow:10px 10px 20px #c7c5c5;
+        width:15rem;
+        transform-origin:top right;
+        transform: scale(0);
+        transition: transform 0.5s ease-out;
+
+        &.open{
+            transform: scale(1);
+        }
+
+        .check-container{
+            width:100%;
+            display:grid;
+            grid-template-columns: 0.1fr 0.9fr;
+            align-items: center;
+            margin:1.5rem 2rem;
+            padding:0;
+            font-size:1.125rem;
+            
+
+            label{
+                &:hover{
+                    cursor:pointer;
+                }
+            }
+            input{
+                margin-right:0.3rem;
+
+                &:hover{
+                    cursor:pointer;
+                }
+            }
+        }
+      
+    }
+}
+
+@media only screen and (min-width:900px){
+    .intro{
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+
+        .search{
+            max-width:300px;
+        }
+    }
+
+    .cars-nav{
+        display:unset;
+        width:100%;
+        background:$color-primary-400;
+        text-transform: uppercase;
+        color:white;
+        font-weight:400;
+        
+
+        ul{
+            list-style:none;
+            width:100%;
+            height:55px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background:$color-primary-400;
+            padding:1.25rem;
+            border-radius:10px;
+        }
+         
+    }
+
+    .car-container{
+        height:89px;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:1em;
+
+        .prices{
+            margin:0;
+        }
+    }
+}

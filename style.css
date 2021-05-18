@@ -1,0 +1,228 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background: #E5E5E5;
+  padding: 2.56rem 3.28rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.count {
+  font-size: 1.125rem;
+  color: #565656;
+  margin-bottom: 0.975em;
+}
+
+.cars-nav {
+  display: none;
+}
+
+.intro {
+  padding: 1.125em 0.975em;
+}
+
+.search {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2.75rem;
+}
+
+.search input {
+  height: 2.4375em;
+  width: 85%;
+  border: none;
+  border-radius: 900px;
+  position: relative;
+  padding: 0 1.15em;
+  background-image: url("../svgs/search.svg");
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search .lupa {
+  background: white;
+}
+
+.car-container {
+  height: 180px;
+  border-radius: 10px;
+  padding: 1.125em 0.975em;
+}
+
+.car-container.filter {
+  display: none;
+}
+
+.car-container:hover {
+  cursor: pointer;
+  background: white;
+}
+
+.car-container h3 {
+  font-size: 1.375rem;
+  color: #008AD8;
+  margin-bottom: 0.97em;
+}
+
+.car-container h5 {
+  font-size: 1.125rem;
+  color: #686868;
+  font-weight: 400;
+}
+
+.car-container .prices {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.5625em;
+}
+
+.car-container .prices h4 {
+  font-size: 1.5rem;
+}
+
+.car-container .hearts {
+  fill: black;
+}
+
+.dots:hover {
+  cursor: pointer;
+}
+
+.filters {
+  position: relative;
+}
+
+.filters .filtersOptions {
+  position: absolute;
+  font-size: 1.125rem;
+  background: white;
+  list-style: none;
+  top: 100%;
+  right: 100%;
+  -webkit-box-shadow: 10px 10px 20px #c7c5c5;
+          box-shadow: 10px 10px 20px #c7c5c5;
+  width: 15rem;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  transition: -webkit-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.filters .filtersOptions.open {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.filters .filtersOptions .check-container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.1fr 0.9fr;
+      grid-template-columns: 0.1fr 0.9fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.5rem 2rem;
+  padding: 0;
+  font-size: 1.125rem;
+}
+
+.filters .filtersOptions .check-container label:hover {
+  cursor: pointer;
+}
+
+.filters .filtersOptions .check-container input {
+  margin-right: 0.3rem;
+}
+
+.filters .filtersOptions .check-container input:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 900px) {
+  .intro {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .intro .search {
+    max-width: 300px;
+  }
+  .cars-nav {
+    display: unset;
+    width: 100%;
+    background: #008AD8;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+  }
+  .cars-nav ul {
+    list-style: none;
+    width: 100%;
+    height: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: #008AD8;
+    padding: 1.25rem;
+    border-radius: 10px;
+  }
+  .car-container {
+    height: 89px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+  }
+  .car-container .prices {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Sales</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="intro">
+        <div class="intro-text">
+            <h1 class="title">Available Cars</h1>
+            <p class="count"> There are 15 cars that match your criteria</p>
+        </div>
+        <div class="search">
+            <input type="text">
+            <div class="filters">
+                <img class="dots" src="./svgs/3dots.svg" alt="search dots">
+                <ul class="filtersOptions">
+                    <div class="check-container">
+                        <input type="checkbox" id="new">
+                        <label for="new">New cars</label>
+                    </div>
+                    <div class="check-container">
+                            <input type="checkbox" id="used">
+                            <label for="used">Used cars</label>
+                        </div>
+                        <div class="check-container">
+                            <input type="checkbox" id="dealer">
+                            <label for="dealer">Dealership</label>
+                        </div>
+                        <div class="check-container">
+                            <input type="checkbox" id="owner">
+                            <label for="owner">For sale by owner</label>
+                        </div>
+                </ul>
+            </div>
+        </div>
+    </section>    
+    <div class="cars-nav">
+        <ul>
+            <li>Car Details</li>
+            <li>Location</li>
+            <li>Price</li>
+            <li>Action</li>
+        </ul>
+    </div>
+    <div class="car-container">
+        <h3>2017 Toyota Highlander V4</h3>
+        <h5>1944 Scrimba Ln <br>
+            Youngstown, OH 44481</h5>
+        <div class="prices">
+            <h4 class="price">$17,400</h4>
+            <i class="far fa-heart fa-lg"></i>
+        </div>
+    </div>
+    <div class="car-container">
+        <h3>2012 Toyota Tundra 4x4</h3>
+        <h5>301 Fantasy Dr<br>
+            Beverly Hills, CA 90210</h5>
+        <div class="prices">
+            <h4 class="price">$23,900</h4>
+            <i class="far fa-heart fa-lg"></i>
+        </div>
+    </div>
+    <div class="car-container">
+        <h3>2004 Dodge Ram 4x4</h3>
+        <h5>9104 Falsety Ave<br>
+            AnonyVille, FL 40440</h5>
+        <div class="prices">
+            <h4 class="price">$7.988</h4>
+            <i class="far fa-heart fa-lg"></i>
+        </div>
+    </div> 
+    <div class="car-container">
+        <h3>2021 Tesla Model 3</h3>
+        <h5>993 Fiscal St<br>
+            Boulder, CO 93391</h5>
+        <div class="prices">
+            <h4 class="price">$37.490</h4>
+            <i class="far fa-heart fa-lg"></i>
+        </div>
+    </div>
+    <div class="car-container">
+        <h3>2017 Toyota Highlander V4</h3>
+        <h5>1944 Scrimba Ln<br>
+            Youngstown, OH 44481</h5>
+        <div class="prices">
+            <h4 class="price">$17.400</h4>
+            <i class="far fa-heart fa-lg"></i>
+        </div>
+    </div>
+    <div class="car-container">
+        <h3>2012 Toyota Tundra 4x4</h3>
+        <h5>301 Fantasy Dr<br>
+            Beverly Hills, CA 90210</h5>
+        <div class="prices">
+            <h4 class="price">$23.900</h4>
+            <i class="far fa-heart fa-lg"></i>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
